@@ -1,8 +1,13 @@
+import MainProvider from "@/app/providers";
+import AppRoutes from "@/pages";
+
 const App = () => {
     return (
-        <div className="app">
-            Hello
-        </div>
+        <MainProvider>
+            <div className="app">
+                <AppRoutes/>
+            </div>
+        </MainProvider>
     )
 }
 export default App
