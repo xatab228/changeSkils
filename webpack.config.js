@@ -23,6 +23,7 @@ module.exports = {
   ],
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
+    historyApiFallback: true,
     port: 9000,
   },
   module: {
