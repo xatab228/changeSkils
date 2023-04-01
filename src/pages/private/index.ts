@@ -1,13 +1,11 @@
 import {lazy} from "react";
 import {IRoute} from "@/shared/types";
+import ROUTE_ENUM from "@/shared/enums"
 
-export enum PrivateRoutesUrl {
-    USER = '/user'
-}
 
 export const privateRoutes:IRoute[] = [
     {
-        path: PrivateRoutesUrl.USER,
+        path: ROUTE_ENUM.PrivateRoutesUrl.USER,
         component: lazy(() => import("@/pages/private/UserInfoPage"))
     },
 ]

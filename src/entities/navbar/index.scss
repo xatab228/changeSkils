@@ -1,0 +1,16 @@
+
+.navbar {
+  $paddings-x: 40px;
+  display: grid;
+  grid-template-columns: 200px auto;
+  align-items: center;
+  max-height: 100%;
+
+  &__logo {
+    padding-left: $paddings-x;
+  }
+
+  &__actions {
+    padding-right: $paddings-x;
+  }
+}

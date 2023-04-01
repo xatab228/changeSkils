@@ -1,13 +1,11 @@
 import {IRoute} from "@/shared/types";
 import {lazy} from "react";
+import ROUTES_ENUM from "@/shared/enums";
 
-export enum PublicRoutesUrl {
-    MAIN_PAGE = '/'
-}
 
 export const publicRoutes:IRoute[] = [
     {
-        path: PublicRoutesUrl.MAIN_PAGE,
+        path: ROUTES_ENUM.PublicRoutesUrl.MAIN_PAGE,
         component: lazy(() => import("@/pages/public/MainPage"))
     },
 ]

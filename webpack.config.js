@@ -32,17 +32,11 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: [
           'style-loader',
-          {
-            loader: "css-loader",
-            options: {
-              modules: true
-            }
-          },
+          'css-loader',
           {
             loader: "sass-loader",
             options: {
               implementation: require("sass"),
-              modules: true
             }
           }
         ],
